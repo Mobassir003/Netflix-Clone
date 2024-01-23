@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 100vh;
+    position: relative;
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    opacity: 0.6;
+}
+
+.main .b {
+    font-family: sans-serif;
+    background-color: red;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+.main .a {
+    font-family: sans-serif;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.479);
+    font-size: 20px;
+    line-height: 14px;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.509);
+
+}
+
+.main nav {
+    max-width: 77vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 10%;
+    height: 65px;
+}
+
+nav img {
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+    gap: 2px;
+    padding: 0 25px;
+}
+
+.hero :first-child {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero :nth-child(3) {
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hold :first-child {
+    width: 20vw;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.509);
+}
+
+.hold :nth-child(2) {
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 24px;
+    background-color: red;
+    color: #ffffff;
+    border-radius: 7px;
+    padding: 15px 45px;
+    cursor: pointer;
+    border: 2px solid red;
+}
+
+.separation {
+    height: 9px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.333);
+    position: relative;
+    z-index: 20;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+}
+
+.secimg {
+    position: relative;
+}
+
+.secimg img {
+    width: 560px;
+    position: relative;
+    z-index: 10;
+}
+
+.secimg video {
+    width: 360px;
+    position: absolute;
+    top: 59px;
+    right: 103px;
+}
+
+.first .secimg .video1 {
+    width: 407px;
+    position: absolute;
+    top: 121px;
+    right: 78px;
+}
+
+.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+.first>div :first-child {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.first>div :nth-child(2) {
+    font-size: 24px;
+}
+
+.feq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.feq svg {
+    filter: invert(1);
+}
+
+.feq {
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+
+.feqbox:hover {
+    background-color: rgba(128, 128, 128, 0.511);
+}
+
+.feqbox {
+    font-family: sans-serif;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.311);
+    padding: 10px;
+    max-width: 60vw;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+
+.footer a {
+    color: white;
+    font-size: 14px;
+}
+
+footer .question {
+    padding: 34px 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+
+}
+
+@media screen and (max-width:1300px) {
+
+    nav {
+        max-width: 90vw;
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        align-items: center;
+    }
+
+    .hero :first-child {
+        font-size: 32px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero :nth-child(2) {
+        font-size: 18px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero :nth-child(3) {
+        font-size: 18px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .first {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hold :first-child {
+        width: 20vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hold :nth-child(2) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
